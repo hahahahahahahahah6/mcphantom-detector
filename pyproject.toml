@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcphantom-detector"
+version = "0.1.0"
+description = "Offline deprecated MCP server config detector"
+requires-python = ">=3.9"
+license = "MIT"
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+mcphantom-detector = "mcphantom_detector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mcphantom_detector = ["data/*.json"]
