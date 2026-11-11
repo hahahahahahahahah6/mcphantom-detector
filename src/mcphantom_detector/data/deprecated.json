@@ -1,0 +1,155 @@
+[
+  {
+    "package": "@modelcontextprotocol/server-github",
+    "short": "server-github",
+    "status": "deprecated",
+    "deprecation": "Archived and unmaintained; no security guarantees. See https://github.com/modelcontextprotocol/servers-archived",
+    "downloads": 5743844,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-postgres",
+    "short": "server-postgres",
+    "status": "deprecated",
+    "deprecation": "Archived and unmaintained; no security guarantees. See https://github.com/modelcontextprotocol/servers-archived",
+    "downloads": 4760500,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-slack",
+    "short": "server-slack",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 3757141,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-puppeteer",
+    "short": "server-puppeteer",
+    "status": "deprecated",
+    "deprecation": "Archived and unmaintained; no security guarantees. See https://github.com/modelcontextprotocol/servers-archived",
+    "downloads": 1582178,
+    "known_vulnerability": "Remote code execution: prompt injection can make the agent run any command instead of the browser (Glow Labs, reported to maintainers; maintainers declined a fix — archived May 2025, no patch coming). No CVE assigned.",
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-brave-search",
+    "short": "server-brave-search",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 1545289,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-google-maps",
+    "short": "server-google-maps",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 834859,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-gitlab",
+    "short": "server-gitlab",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 290473,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-gdrive",
+    "short": "server-gdrive",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 266018,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-redis",
+    "short": "server-redis",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 141723,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/create-server",
+    "short": "create-server",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 123166,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-aws-kb-retrieval",
+    "short": "server-aws-kb-retrieval",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 23626,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-everart",
+    "short": "server-everart",
+    "status": "deprecated",
+    "deprecation": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+    "downloads": 13186,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-git",
+    "short": "server-git",
+    "status": "archived-source-only",
+    "deprecation": null,
+    "downloads": null,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-sentry",
+    "short": "server-sentry",
+    "status": "archived-source-only",
+    "deprecation": null,
+    "downloads": null,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-sqlite",
+    "short": "server-sqlite",
+    "status": "archived-source-only",
+    "deprecation": null,
+    "downloads": null,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-fetch",
+    "short": "server-fetch",
+    "status": "archived-source-only",
+    "deprecation": null,
+    "downloads": null,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  },
+  {
+    "package": "@modelcontextprotocol/server-time",
+    "short": "server-time",
+    "status": "archived-source-only",
+    "deprecation": null,
+    "downloads": null,
+    "known_vulnerability": null,
+    "repo": "modelcontextprotocol/servers-archived"
+  }
+]
