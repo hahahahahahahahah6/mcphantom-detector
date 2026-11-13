@@ -146,7 +146,12 @@ def match_entry(entry, database, file, server):
                 repo_specific = True
             if token(package, text) or bare(short, text, role) or repo_match:
                 high = short == 'server-puppeteer'
-                message = row['deprecation'] or 'Archived source-only MCP server; no npm package.'
+                if row['deprecation']:
+                    message = row['deprecation']
+                elif row['status'] == 'maintained-source-only':
+                    message = 'Maintained source-only MCP server; no npm package.'
+                else:
+                    message = 'Archived source-only MCP server; no npm package.'
                 if row['known_vulnerability']:
                     message += ' ' + row['known_vulnerability']
                 matched[row['package']] = dict(rule='deprecated-mcp-server', severity='HIGH' if high else 'MEDIUM',
