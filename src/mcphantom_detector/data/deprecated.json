@@ -137,19 +137,19 @@
   {
     "package": "@modelcontextprotocol/server-fetch",
     "short": "server-fetch",
-    "status": "archived-source-only",
+    "status": "maintained-source-only",
     "deprecation": null,
     "downloads": null,
     "known_vulnerability": null,
-    "repo": "modelcontextprotocol/servers-archived"
+    "repo": "modelcontextprotocol/servers"
   },
   {
     "package": "@modelcontextprotocol/server-time",
     "short": "server-time",
-    "status": "archived-source-only",
+    "status": "maintained-source-only",
     "deprecation": null,
     "downloads": null,
     "known_vulnerability": null,
-    "repo": "modelcontextprotocol/servers-archived"
+    "repo": "modelcontextprotocol/servers"
   }
 ]
