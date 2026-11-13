@@ -80,8 +80,10 @@ class DetectorTests(unittest.TestCase):
                 self.assertEqual(row['short'], short)
                 self.assertEqual(row['deprecation'], deprecation)
                 self.assertEqual(row['downloads'], downloads)
-                self.assertEqual(row['repo'], 'modelcontextprotocol/servers-archived')
-                self.assertEqual(row['status'], 'deprecated' if downloads is not None else 'archived-source-only')
+                expected_repo = 'modelcontextprotocol/servers' if short in ('server-fetch', 'server-time') else 'modelcontextprotocol/servers-archived'
+                expected_status = 'deprecated' if downloads is not None else ('maintained-source-only' if short in ('server-fetch', 'server-time') else 'archived-source-only')
+                self.assertEqual(row['repo'], expected_repo)
+                self.assertEqual(row['status'], expected_status)
                 self.assertEqual(row['known_vulnerability'], VULNERABILITY if short == 'server-puppeteer' else None)
         self.assertEqual(sum(r['downloads'] is None and r['deprecation'] is None for r in self.db), 5)
 
@@ -128,6 +130,15 @@ class DetectorTests(unittest.TestCase):
                       'https://example.org/@modelcontextprotocol/server-github',
                       r'C:\cache\@modelcontextprotocol/server-github'):
             self.assertEqual(len(self.matches({'url': value})), 1)
+
+    def test_maintained_source_only_message(self):
+        for short in ('server-fetch', 'server-time'):
+            result = self.matches({'command': 'npx @modelcontextprotocol/' + short})
+            self.assertEqual(len(result), 1)
+            self.assertIn('Maintained source-only', result[0]['message'])
+        result = self.matches({'command': 'npx @modelcontextprotocol/server-git'})
+        self.assertEqual(len(result), 1)
+        self.assertIn('Archived source-only', result[0]['message'])
 
     def test_archive_specific_source(self):
         found = self.matches({'url': 'https://github.com/modelcontextprotocol/servers-archived/tree/main/src/git'})
