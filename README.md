@@ -58,10 +58,10 @@ The 12 npm entries below have latest-version deprecation messages. Downloads are
 | `@modelcontextprotocol/server-git` | archived-source-only | — |
 | `@modelcontextprotocol/server-sentry` | archived-source-only | — |
 | `@modelcontextprotocol/server-sqlite` | archived-source-only | — |
-| `@modelcontextprotocol/server-fetch` | archived-source-only | — |
-| `@modelcontextprotocol/server-time` | archived-source-only | — |
+| `@modelcontextprotocol/server-fetch` | maintained-source-only | — |
+| `@modelcontextprotocol/server-time` | maintained-source-only | — |
 
-The five source-only entries have no published npm package under these scoped names; deprecation and downloads are null. The bundled JSON ships in both distributions and is read locally at runtime.
+The five source-only entries (three archived, two maintained) have no published npm package under these scoped names; deprecation and downloads are null. The bundled JSON ships in both distributions and is read locally at runtime.
 
 ## Differentiation
 
