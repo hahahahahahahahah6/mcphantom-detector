@@ -21,7 +21,7 @@ def load_db(path=None):
         for key in ('package', 'short', 'repo'):
             if not isinstance(entry[key], str) or not entry[key]:
                 raise ValueError('database names must be nonempty strings')
-        if entry['status'] not in ('deprecated', 'archived-source-only'):
+        if entry['status'] not in ('deprecated', 'archived-source-only', 'maintained-source-only'):
             raise ValueError('invalid database status')
         for key in ('deprecation', 'known_vulnerability'):
             if entry[key] is not None and not isinstance(entry[key], str):
